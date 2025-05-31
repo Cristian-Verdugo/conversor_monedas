@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de monedas</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <h1>Conversor de monedas Nacional</h1>
+    <div class="card">
+        <h2>Pesos CLP</h2>
+        <input type="text" id="clpInput" placeholder="Ingrese el monto en CLP" autocomplete="off" />
+        <label for="monedaSelect">Moneda a convertir:</label>
+        <select id="monedaSelect">
+            <option value="">Seleccione moneda</option>
+        </select>
+        <button onclick="convertirMoneda()">Buscar</button>
+        <p id="resultado">...</p>
+    </div>
+    <canvas id="grafico"></canvas>
+    <script src="assets/js/app.js"></script>
+    <footer>
+        <p>&copy; 2024 Conversor de Monedas Nacional - Desarrollado para prueba final</p>
+    </footer>
+</body>
+
+</html>
